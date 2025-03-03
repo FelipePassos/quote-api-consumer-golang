@@ -1,0 +1,26 @@
+# Basicos
+.env
+
+# Binaries para programas e plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Binários de teste gerados pelo comando `go test -c`
+*.test
+
+# Saídas do Go Coverage (geralmente com LiteIDE)
+*.out
+
+# Diretórios de dependências (caso você não queira versionar o vendor)
+vendor/
+
+# Diretórios de build e outros artefatos
+bin/
+pkg/
+
+# Configurações do VSCode, GoLand e outras IDEs (opcional)
+.vscode/
+.idea/

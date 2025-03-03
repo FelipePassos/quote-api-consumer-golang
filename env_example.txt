@@ -1,0 +1,5 @@
+
+API utilizada: https://api.invertexto.com/
+
+### Modelo de .env ###
+TOKEN=SeuTokenAqui

@@ -3,3 +3,4 @@ API utilizada: https://api.invertexto.com/
 
 ### Modelo de .env ###
 TOKEN=SeuTokenAqui
+URL=https://api.invertexto.com/v1/currency/USD_BRL?token=

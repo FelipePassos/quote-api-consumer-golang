@@ -16,7 +16,7 @@
 
 # Diretórios de dependências (caso você não queira versionar o vendor)
 vendor/
-
+exports/
 # Diretórios de build e outros artefatos
 bin/
 pkg/

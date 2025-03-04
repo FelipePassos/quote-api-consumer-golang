@@ -7,12 +7,12 @@ import (
 )
 
 // generate document files
-func GenereatorDocFile(response models.ApiCurrence) (bool, error) {
+func GenereatorDocFile(response models.ApiCurrence) error {
 
 	file, err := os.Create("exports/info.pdf")
 
 	if err != nil {
-		fmt.Println("create doc error")
+		return fmt.Errorf("error: %w", err)
 	}
 
 	defer file.Close()
@@ -22,10 +22,8 @@ func GenereatorDocFile(response models.ApiCurrence) (bool, error) {
 	_, err = file.WriteString(text)
 
 	if err != nil {
-		fmt.Println("write error:", err)
+		return fmt.Errorf("error: %w", err)
 	}
 
-	created := true
-
-	return created, nil
+	return nil
 }
